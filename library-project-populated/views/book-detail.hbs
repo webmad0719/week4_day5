@@ -1,0 +1,42 @@
+<div class="container author">
+
+  {{#with book}}
+
+  <h1>Detalles de {{title}}</h1>
+
+  <div class="row">
+
+    <div class="col-md-8">
+
+      <h4>Descripción</h4>
+      <p>{{description}}</p>
+      <hr>
+      <h4>Rating</h4>
+      <p>{{rating}}</p>
+
+    </div>
+
+    <div class="col-md-4">
+
+
+      <h4>Sobre el autor/a</h4>
+
+      {{#each author}}
+      <p>{{this.name}} {{this.lastName}} ({{this.nationality}})</p>
+      <img src="{{this.pictureUrl}}" alt="{{this.name}} {{this.lastName}}">
+      <hr>
+      {{/each}}
+
+      <!--
+        <p>{{author.0.name}} {{author.0.lastName}} ({{author.0.nationality}})</p>
+      <img src="{{author.0.pictureUrl}}" alt="{{author.0.name}} {{author.0.lastName}}">
+      -->
+
+    </div>
+  </div>
+
+  {{/with}}
+
+  <a href="/books/list" class="btn btn-dark">Volver a la lista</a>
+
+</div>

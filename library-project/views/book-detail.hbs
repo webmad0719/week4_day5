@@ -1,0 +1,17 @@
+<div class="container">
+
+  {{#with book}}
+  <h1>Detalles de {{title}}</h1>
+  <h4>Descripción</h4>
+  <p>{{description}}</p>
+  <hr>
+  <h4>Autor/a</h4>
+  <p>{{author}}</p>
+  <hr>
+  <h4>Rating</h4>
+  <p>{{rating}}</p>
+  {{/with}}
+
+  <a href="/books/list" class="btn btn-dark">Volver a la lista</a>
+
+</div>

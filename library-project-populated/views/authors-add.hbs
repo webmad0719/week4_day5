@@ -1,0 +1,43 @@
+<div class="container">
+
+  <div class="row">
+
+    <div class="col-md-6">
+      <h1>Nuevo autor</h1>
+    </div>
+
+    <div class="col-md-6">
+
+      <form action="/authors/create" method="post">
+        <div class="form-group">
+          <label for="name-input">Nombre</label>
+          <input name="name" type="text" class="form-control" id="name-input">
+        </div>
+
+        <div class="form-group">
+          <label for="lastName-input">Apellido</label>
+          <input name="lastName" type="text" class="form-control" id="lastName-input">
+        </div>
+
+        <div class="form-group">
+          <label for="nationality-input">Nacionalidad</label>
+          <input name="nationality" type="text" class="form-control" id="nationality-input">
+        </div>
+
+        <div class="form-group">
+          <label for="birthday-input">Nacimiento</label>
+          <input name="birthday" type="text" class="form-control" id="birthday-input">
+        </div>
+
+        <div class="form-group">
+          <label for="pictureUrl-input">URL Imagen</label>
+          <input name="pictureUrl" type="text" class="form-control" id="pictureUrl-input">
+        </div>
+
+        <button type="submit" class="btn btn-dark">Crear nuevo autor</button>
+
+      </form>
+    </div>
+
+  </div>
+</div>
